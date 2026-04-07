@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eventura Designs — Bespoke Event Backdrops &amp; Styling</title>
   <meta name="description" content="Eventura Designs creates luxury bespoke backdrops and personalised event styling for weddings, birthdays, and corporate events across the UK." />
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -21,6 +22,7 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
@@ -35,6 +37,7 @@
     <a href="gallery.html">Gallery</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -49,15 +52,28 @@
         <span class="ornament-line"></span>
       </div>
       <p class="hero__tagline">Bespoke backdrops and personalised styling for every occasion</p>
-      <a href="gallery.html" class="btn">View Our Work</a>
+      <div class="hero__ctas">
+        <a href="gallery.html" class="btn">View Our Work</a>
+        <a href="contact.html" class="btn btn--solid">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brand Story ── -->
+  <section class="section brand-story">
+    <div class="container">
+      <div class="brand-story__inner reveal">
+        <span class="accent-script">Our Philosophy</span>
+        <p class="brand-story__lead">Eventura Designs blends "event" with "ventura" — the spirit of adventure — because every celebration should feel extraordinary. We specialise in creating beautifully personalised décor and experiences that bring your vision to life, ensuring every occasion feels unique, meaningful, and unforgettable.</p>
+      </div>
     </div>
   </section>
 
   <!-- ── Intro ── -->
-  <section class="section intro-section">
+  <section class="section section--surface intro-section">
     <div class="container">
       <div class="two-col reveal">
-        <div class="img-placeholder img-placeholder--tall">Event Photo</div>
+        <img src="assets/logo_with_description.jpg" alt="Eventura Designs" style="width:100%; height:100%; object-fit:cover; border: 1px solid rgba(201,168,76,0.3);" />
         <div class="intro-text">
           <h2>Where Every Detail<br>Tells a Story</h2>
           <div class="ornament" style="justify-content: flex-start; margin: 1rem 0 1.5rem;">
@@ -74,7 +90,7 @@
   </section>
 
   <!-- ── Services Teaser ── -->
-  <section class="section section--surface">
+  <section class="section">
     <div class="container">
       <div class="section-header reveal">
         <h2>What We Create</h2>
@@ -88,7 +104,7 @@
 
         <div class="service-card reveal reveal-delay-1">
           <div class="service-card__icon">
-            <!-- Arch icon -->
+            <!-- Arch / floral icon -->
             <svg viewBox="0 0 36 36" aria-hidden="true">
               <path d="M6 30 L6 16 Q6 6 18 6 Q30 6 30 16 L30 30"/>
               <line x1="2" y1="30" x2="34" y2="30"/>
@@ -100,30 +116,30 @@
 
         <div class="service-card reveal reveal-delay-2">
           <div class="service-card__icon">
-            <!-- Neon/lettering icon -->
+            <!-- Balloon icon -->
             <svg viewBox="0 0 36 36" aria-hidden="true">
-              <rect x="4" y="10" width="28" height="16" rx="2"/>
-              <line x1="10" y1="18" x2="26" y2="18"/>
-              <line x1="14" y1="14" x2="14" y2="22"/>
-              <line x1="22" y1="14" x2="22" y2="22"/>
+              <ellipse cx="18" cy="14" rx="8" ry="10"/>
+              <path d="M18 24 Q16 27 18 30"/>
+              <line x1="16" y1="30" x2="20" y2="30"/>
+              <path d="M12 10 Q10 7 13 6"/>
             </svg>
           </div>
-          <h3>Neon &amp; LED Displays</h3>
-          <p>Custom light installations that bring warmth and character to any venue.</p>
+          <h3>Balloon Installations</h3>
+          <p>From sweeping organic garlands to bold ceiling clusters — crafted to your palette and scale.</p>
         </div>
 
         <div class="service-card reveal reveal-delay-3">
           <div class="service-card__icon">
-            <!-- Frame/signage icon -->
+            <!-- Signage / envelope icon -->
             <svg viewBox="0 0 36 36" aria-hidden="true">
-              <rect x="5" y="5" width="26" height="26" rx="1"/>
-              <rect x="9" y="9" width="18" height="18" rx="1"/>
-              <line x1="13" y1="18" x2="23" y2="18"/>
-              <line x1="18" y1="13" x2="18" y2="23"/>
+              <rect x="4" y="8" width="28" height="20" rx="2"/>
+              <polyline points="4,8 18,20 32,8"/>
+              <line x1="4" y1="28" x2="13" y2="19"/>
+              <line x1="32" y1="28" x2="23" y2="19"/>
             </svg>
           </div>
-          <h3>Custom Signage</h3>
-          <p>Personalised print and lettered pieces that speak your event's language.</p>
+          <h3>Signage, Stationery &amp; More</h3>
+          <p>Custom signage, personalised invitations, goody bags, and finishing touches — we do it all, down to the last detail.</p>
         </div>
 
       </div>
