@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Eventura Designs</title>
+  <meta name="description" content="Get in touch with Eventura Designs to enquire about bespoke event backdrops and personalised styling for your occasion." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Eventura Designs — Home">
+        <img src="assets/logo.jpg" alt="Eventura Designs" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <header class="page-hero">
+    <div class="reveal">
+      <h1>Get In Touch</h1>
+      <div class="ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond"></span>
+        <span class="ornament-line"></span>
+      </div>
+      <p class="intro-line">We'd love to hear about your event. Reach out via Instagram or fill in the form below and we'll get back to you.</p>
+    </div>
+  </header>
+
+  <!-- ── Contact Section ── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid reveal">
+
+        <!-- Enquiry Form -->
+        <div>
+          <h2 style="margin-bottom: 0.3em; font-size: clamp(1.5rem, 2.5vw, 2rem);">Send an Enquiry</h2>
+          <div class="ornament" style="justify-content: flex-start; margin: 0.6rem 0 1.8rem;">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond"></span>
+          </div>
+
+          <form class="enquiry-form" id="enquiry-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="event-type">Event Type</label>
+              <select id="event-type" name="event-type" required>
+                <option value="" disabled selected>Select your event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday</option>
+                <option value="corporate">Corporate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="event-date">Event Date</label>
+              <input
+                type="date"
+                id="event-date"
+                name="event-date"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your event — the venue, the look you're after, anything relevant..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--solid" style="align-self: flex-start;">Send Enquiry</button>
+
+          </form>
+
+          <div class="form-success" id="form-success" role="alert">
+            Thank you! We'll be in touch soon.
+          </div>
+        </div>
+
+        <!-- Instagram Block -->
+        <div>
+          <div class="insta-block reveal reveal-delay-1">
+            <div class="insta-block__icon">
+              <!-- Instagram SVG icon -->
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="6" y="6" width="36" height="36" rx="10" ry="10"/>
+                <circle cx="24" cy="24" r="8.5"/>
+                <circle cx="35" cy="13" r="2.2" fill="currentColor" stroke="none" style="fill: var(--gold);"/>
+              </svg>
+            </div>
+            <h3>Or Find Us On Instagram</h3>
+            <p class="handle">@eventuradesigns</p>
+            <a
+              href="https://www.instagram.com/eventuradesigns"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >Visit Our Instagram</a>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 2rem; border: 1px solid rgba(201, 168, 76, 0.12); background: var(--green-surface);">
+            <h3 style="font-size: 1.1rem; color: var(--cream); margin-bottom: 0.6rem;">Based in the United Kingdom</h3>
+            <p style="font-size: 0.9rem;">We work with clients across England, Scotland, and Wales. Whatever your location, we'd love to hear from you — get in touch and we'll let you know how we can help.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <p>&copy; 2024 Eventura Designs. All rights reserved. &nbsp;&middot;&nbsp; United Kingdom</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
