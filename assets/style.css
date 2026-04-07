@@ -551,6 +551,15 @@ p {
    HOME — HERO
    ============================================================ */
 
+.hero__logo {
+  width: clamp(120px, 18vw, 200px);
+  height: auto;
+  margin: 0 auto 1.6rem;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(201, 168, 76, 0.12);
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -726,11 +735,22 @@ p {
   align-items: center;
   justify-content: center;
   transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
-.gallery-tile:hover .tile-inner {
+.gallery-tile .tile-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-tile:hover .tile-inner img {
   transform: scale(1.03);
 }
+
+/* image handles the hover scale */
 
 .gallery-tile__overlay {
   position: absolute;

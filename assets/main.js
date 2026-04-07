@@ -76,11 +76,14 @@
 
 /* ── Set active nav link based on current page ── */
 (function () {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  // Handles both /gallery.html (local) and /gallery (Netlify pretty URLs)
+  var raw = window.location.pathname.split('/').pop();
+  // Strip .html extension if present
+  var page = raw.replace(/\.html$/, '') || 'index';
 
   document.querySelectorAll('.nav__links a, .nav__mobile a').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (href === path || (path === '' && href === 'index.html')) {
+    var href = link.getAttribute('href').replace(/\.html$/, '') || 'index';
+    if (href === page) {
       link.classList.add('active');
     }
   });
